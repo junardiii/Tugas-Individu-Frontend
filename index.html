@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healthy Lifestyle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<style>
+  .navbar {
+    background: linear-gradient(90deg, #37613b 0%, #0dff00 100%);
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    transition: transform 0.3s;
+    padding: 10px 15px;
+  }
+
+  .nav-link:hover {
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px black;
+    border-radius: 10px;
+  }
+
+  .nav-link:focus {
+    color: #37613b;
+  }
+
+  .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 10px black;
+  }
+
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .btn-success {
+    align-self: end;
+  }
+
+  .footer {
+    background: linear-gradient(90deg, #37613b 0%, #0dff00 100%);
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Healthy Lifestyle</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="subscribe.html">Subscribe</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Welcome to the Healthy Lifestyle</h2>
+        <h3>Healthy living is a choice</h3>
+        <p class="mt-4">
+          Healthy lifestyle is a way for someone to live a life that
+          can reduce the potential risk of serious illness or the
+          possibility of premature death.
+        </p>
+        <div id="carouselExample" class="carousel slide carousel-fade my-4" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://assets-a1.kompasiana.com/items/album/2023/05/25/photo1684408056-646f321f4addee1a6e6770d2.jpeg?t=o&v=410"
+                class="d-block w-100 rounded shadow-neon" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://media.licdn.com/dms/image/D5612AQEtgPLz3wktow/article-cover_image-shrink_600_2000/0/1687786381825?e=2147483647&v=beta&t=0_XbRlmTiJ2pDA1CGBbTFNtPGja-RcLQYESEI55jfXI"
+                class="d-block w-100 rounded shadow-neon" alt="Wellness lifestyle image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/originals/16/d6/ab/16d6aba1327ddc3b55df0ba3db3ab24a.jpg"
+                class="d-block w-100 rounded shadow-neon" alt="Wellness lifestyle image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="https://dk4fkkwa4o9l0.cloudfront.net/production/uploads/article/image/3056/web__33_.png"
+                class="d-block w-100 rounded shadow-neon" alt="Image 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h3 class="mt-4">The Latest From Healthy Lifestyle</h3>
+        <p>
+          Discover the latest trends in wellness, from meditation techniques to fitness tips that keep you grounded and
+          healthy.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <div class="d-flex justify-content-center flex-wrap mt-4">
+    <div class="card m-2" style="width: 18rem;">
+      <img
+        src="https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/education/hero/healthy-lifestyles-healthy-outlook-2x.jpg?h=1112&iar=0&w=2880&rev=b67be4f81c5b4534a2b6711092c4f5ed&hash=FFA27436D4AE12AB619E687E54676B0E"
+        class="card-img-top" alt="Card 1">
+      <div class="card-body">
+        <h5 class="card-title">Healthy Lifestyles, Healthy Outlook</h5>
+        <p class="card-text">A healthy lifestyle can help you thrive as you move through your life's journey.</p>
+        <a href="https://www.ucsfhealth.org/education/healthy-lifestyles-healthy-outlook" target="_blank"
+          class="btn btn-success">Read More</a>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem;">
+      <img src="https://dk4fkkwa4o9l0.cloudfront.net/production/uploads/article/image/3056/web__33_.png"
+        class="card-img-top" alt="Card 2">
+      <div class="card-body">
+        <h5 class="card-title">5 Ways to Start a Healthy Lifestyle</h5>
+        <p class="card-text">A healthy lifestyle is not just a trend,
+          but is a long-term investment for our health and well-being, but it is often
+          not easy to do because of the various problems and obstacles we face.</p>
+        <a href="https://herminahospitals.com/en/articles/5-cara-memulai-healthy-lifestyle.html" target="_blank"
+          class="btn btn-success">Read More</a>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem;">
+      <img
+        src="https://cdn-assetd.kompas.id/e2iF2FqiBQLPbS4zagGIG56qnpc=/1280x853/filters:watermark(https://cdn-content.kompas.id/umum/kompas_main_logo.png,-16p,-13p,0)/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2022%2F12%2F05%2F2a5fa527-1325-446b-8bef-02ae01f7dab3_jpg.jpg"
+        class="card-img-top" alt="Card 3">
+      <div class="card-body">
+        <h5 class="card-title">Healthy Lifestyle Reduces the Risk of Depression</h5>
+        <p class="card-text">Having a healthy lifestyle is not only good for physical health, but also for strengthening
+          mental health.</p>
+        <a href="https://www.kompas.id/baca/english/2023/09/13/en-pola-hidup-sehat-kurangi-risiko-depresi"
+          target="_blank" class="btn btn-success">Read More</a>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <footer class="footer bg-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small>
+            <a href="404.html" class="text-decoration-none text-white">Healthy Lifestyle</a>
+            <span class="mx-2 text-black">•</span>
+            <a href="404.html" class="text-decoration-none text-white">535230225</a>
+            <span class="mx-2 text-black">•</span>
+            <a href="404.html" class="text-decoration-none text-white">Junardi Chailesia</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
